@@ -1,0 +1,31 @@
+extends layout
+
+block body-content
+  // Header
+  header#header
+    h1 #{mainText} 
+    p
+      | !{subText}
+  // Signup Form
+  form#signup-form(method='post' action='#')
+    input#email(type='email' name='email' placeholder='Email Address')
+    input(type='submit' value='Sign Up')
+  // Footer
+  footer#footer
+    ul.icons
+      li
+        a.icon.brands.fa-twitter(href='https://twitter.com/VillanovaU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor')
+          span.label Twitter
+      li
+        a.icon.brands.fa-instagram(href='https://www.instagram.com/villanovau/?hl=en')
+          span.label Instagram
+      li
+        a.icon.fa-envelope(href='https://gmail.com/')
+          span.label Email
+    ul.copyright
+      li &copy; Untitled.
+      li
+        | Credits: 
+        a(href='http://html5up.net') HTML5 UP
+  // Scripts
+  script(src='/assets/js/main.js')
